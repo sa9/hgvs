@@ -34,7 +34,7 @@ def main():
         install_requires=['pip>=1.2'],
         tests_require=[str(line.req) for line in
                        parse_requirements('requirements-dev.txt',
-                                          session=PipSession())],
+                                          session=False)],
     )
 
 if __name__ == '__main__':
